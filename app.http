@@ -1,0 +1,43 @@
+post http://localhost:3000/register/
+Content-Type : application/json 
+
+{
+  "username": "Damodar",
+  "name": "Dam",
+  "password": "Damu@z2001",
+  "gender": "male",
+  "location": "Nepal"
+}
+
+###
+post http://localhost:3000/login/
+Content-Type : application/json;
+
+{
+  "username": "adam_richard",
+  "password": "richard_567"
+}
+
+
+###
+get http://localhost:3000/log/
+
+###
+post http://localhost:3000/login/
+Content-Type : application/json
+
+{
+
+"username": "Damodar",
+"password": "Damu@z2001"
+}
+
+###
+put http://localhost:3000/change-password/ 
+Content-Type :application/json 
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard_567",
+  "newPassword": "richard@123"
+}
